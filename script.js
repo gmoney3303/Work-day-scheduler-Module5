@@ -24,7 +24,7 @@ for (var i = 0; i < timeBlocks.length; i++) {
     timeBlock.classList.add("past");
     timeBlock.classList.remove("present");
     timeBlock.classList.remove("future");
-  } else if (hour === currentHour) {
+  } else if (hour == currentHour) {
     timeBlock.classList.remove("past");
     timeBlock.classList.add("present");
     timeBlock.classList.remove("future");
@@ -38,16 +38,16 @@ for (var i = 0; i < timeBlocks.length; i++) {
   $(".time-block").each(function () {
     var timeBlockId = $(this).attr("id");
 
-    // Get the user input from local storage using the time block ID as a key
+    // Get the user input from local storage 
     var storedInput = localStorage.getItem(timeBlockId);
 
-    // Set the stored input in the corresponding textarea
+    // Set the stored input 
     $(this).find(".description").val(storedInput);
   });
-  // TODO: Add code to display the current date in the header of the page.
+  
   var currentDate = dayjs().format("dddd, MMMM D, YYYY");
 
-  // Display the current date in the element with the id "current-day"
+  // Display the current date 
   $("#currentDay").text(currentDate);
 
   
