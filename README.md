@@ -2,8 +2,11 @@
 
 # deployed link
 
+https://gmoney3303.github.io/Work-day-scheduler-Module5/
+
 ## Description
 Working on this project helped me work on using $ objects and functions also small syntax like .find and .val. Setting the local storage and getting the local storage gave me the most problem but googleing and using the expert learning assistant helped with that.
+
 ## usage
 
 ![alt text](images/Capture.PNG)
